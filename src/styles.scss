@@ -1,25 +1,13 @@
-/* src/styles.scss */
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-
 :root {
-  --color-primary: #01426a;
-  --color-accent:  #0077c8;
-  --color-bg:      #f7f7f7;
-  --color-text:    #333;
-  --radius:        0.5rem;
-  --shadow:        0 2px 8px rgba(0,0,0,0.1);
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  --color-primary: #003366;
+  --color-accent: #0074D9;
+  --color-bg: #f7fafc;
+  --color-error: #ff4d4f;
+  --shadow: 0 4px 8px rgba(0,0,0,0.1);
+  --radius: 8px;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
   background-color: var(--color-bg);
-  color: var(--color-text);
-  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
 }
