@@ -1,0 +1,11 @@
+<label for="station-select">Choose a station:</label>
+<select
+  id="station-select"
+  [(ngModel)]="selectedId"
+  (ngModelChange)="stationSelected.emit($event)"
+>
+  <option [ngValue]="null">-- Select station --</option>
+  <option *ngFor="let s of stations" [value]="s.stationIdentifier">
+    {{ s.name }}
+  </option>
+</select>

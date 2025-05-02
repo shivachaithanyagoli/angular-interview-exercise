@@ -1,11 +1,34 @@
 <header class="header">
-  <span class="header-text">Alaska Air - Angular Interview Exercise</span>
+  <span class="header-text">
+    Alaska Air – Angular Interview Exercise
+  </span>
+  <button class="unit-toggle" (click)="toggleUnit()">
+    Show °{{ unit === 'C' ? 'F' : 'C' }}
+  </button>
 </header>
 
-<div class="main">
+<main class="main">
+  <app-weather-station-list
+    [stations]="stations"
+    [selectedId]="selectedId"
+    (stationSelected)="onSelect($event)"
+  ></app-weather-station-list>
 
-</div>
+  <app-temperature-display
+    [loading]="loading"
+    [temperature]="displayTemp"
+    [error]="error"
+    [unit]="unit"
+  ></app-temperature-display>
+</main>
 
 <footer class="footer">
-  Original Repository: <a href="https://github.com/Alaska-ITS/angular-interview-exercise">angular-interview-exercise</a>
+  Original Repository:
+  <a
+    href="https://github.com/Alaska-ITS/angular-interview-exercise"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    angular-interview-exercise
+  </a>
 </footer>

@@ -1,8 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
-$standard-font: Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif;
+/* src/styles.scss */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --color-primary: #01426a;
+  --color-accent:  #0077c8;
+  --color-bg:      #f7f7f7;
+  --color-text:    #333;
+  --radius:        0.5rem;
+  --shadow:        0 2px 8px rgba(0,0,0,0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  min-height: 100vh;
-  margin: 0;
-  font-family: $standard-font;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
 }

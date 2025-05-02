@@ -1,0 +1,12 @@
+<ng-container *ngIf="loading">
+    Loading…
+  </ng-container>
+  
+  <ng-container *ngIf="!loading && temperature !== null">
+    Current Temperature: {{ temperature }} °{{ unit }}
+  </ng-container>
+  
+  <ng-container *ngIf="!loading && error">
+    <span class="error">{{ error }}</span>
+  </ng-container>
+  
